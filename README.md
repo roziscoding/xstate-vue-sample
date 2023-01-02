@@ -1,18 +1,15 @@
-# Vue 3 + TypeScript + Vite
+# Artigo: "Vue.js + XState: Utilizando State Machines Oara Simplificar o Estado de Uma Aplicação"
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Aplicação de exemplo que realiza uma busca de repositórios no GitHub e utiliza XState para controlar o estado da requisição
 
-## Recommended IDE Setup
+Em caso de dúvidas, não hesite em me contactar através do [Telegram](https://roz.ninja/telegram) ou [Twitter](https://roz.ninja/twitter)!
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Instruções para executar o projeto
 
-## Type Support For `.vue` Imports in TS
+1. Clone o repositório
+2. Na pasta do projeto, execute `npm i`
+3. Execute `npm run dev`
+4. Abra a URL que aparecer no terminal
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+## Licença
+Este repositório é disponibilizado através da licença GPL-3.0. Seu uso é livre dentro dos termos descritos no [texto da licença](https://www.gnu.org/licenses/gpl-3.0.pt-br.html).
