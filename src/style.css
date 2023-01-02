@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --page-background: #e0e0e0;
+  --accent: #258bff;
+}
+
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+  color: var(--accent);
+}
+
+a:hover {
+  filter: brightness(0.90)
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--accent);
+  color: white;
+  transition: all 0.1s;
+  cursor: pointer;
+  white-space: normal;
+  text-align: center;
+  padding: 7px;
+}
+
+.button a {
+  color: white;
+  font-size: 0.9rem;
+}
+
+.fillparent {
+  height: 100%;
+  width: 100%;
+}
+
+.fillwidth {
+  width: 100%;
+}
+
+.elevated {
+  border-radius: 10px;
+  background: var(--page-background);
+  box-shadow: 7px 7px 14px #bebebe,
+    -7px -7px 14px #ffffff;
+}
+
+.center {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
