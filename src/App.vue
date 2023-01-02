@@ -1,11 +1,19 @@
 <script setup lang="ts">
 import SearchBar from "./components/SearchBar.vue";
+import ResultsList from "./components/ResultsList.vue";
+import { useRepositorySearch } from "./hooks/use-repository-search";
+
+const { state, search, reset } = useRepositorySearch();
 </script>
 
 <template>
   <div class="main fillparent center">
     <div class="content elevated">
-      <SearchBar />
+      <SearchBar @search="search" @reset="reset" />
+      <div class="result" v-if="state.matches('idle')">Clique em "Pesquisar" para carregar os resultados</div>
+      <div class="result" v-if="state.matches('loading')">Carregando resultados...</div>
+      <div class="result" v-if="state.matches('error')">Erro ao buscar resultados: {{ state.context.error }}</div>
+      <ResultsList class="result" :results="state.context.results" v-if="state.matches('success')" />
     </div>
   </div>
 </template>
